@@ -1,0 +1,11 @@
+version: "2"
+services:
+  app:
+    build: .
+    image: pablomartinez123/golang-gin
+#    volumes:
+#      - ./src:/go/src
+#    working_dir: /go/src
+    ports:
+      - "80:80"    
+#    command: go run main.go
